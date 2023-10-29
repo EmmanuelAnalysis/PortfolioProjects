@@ -1,5 +1,5 @@
 
-# This code allows us to analyze CPI and CPIXFE (excluding food and energy) data from a Statistics Canada table from 1992 to 2023. #
+# This code allows us to analyze CPI and CPIXFE (excluding food and energy) data from a Statistics Canada table from 1995 to 2023. #
 
 
 # Import the data in text format. 
@@ -10,8 +10,8 @@ View(datacpi)
 
 # Let's create a time series for CPI and CPIXFE and plot both series on a graph.
 
-CPI <- ts(datacpi$CPI, start=c(1992, 1), end=c(2023, 7), frequency = 12)
-CPIXFE <- ts(datacpi$CPIXFE, start=c(1992, 1), end=c(2023, 7), frequency = 12)
+CPI <- ts(datacpi$CPI, start=c(1999, 1), end=c(2023, 7), frequency = 12)
+CPIXFE <- ts(datacpi$CPIXFE, start=c(1999, 1), end=c(2023, 7), frequency = 12)
 
 ts.plot(CPI, CPIXFE, main="CPI et CPIXFE", col=c("blue", "red"))
 legend("topleft", legend=c("CPI", "CPIXFE"), lty=1:1, col=c("blue", "red"), 
