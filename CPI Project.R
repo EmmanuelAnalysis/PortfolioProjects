@@ -4,7 +4,7 @@
 
 # Import the data in text format. 
 
-datacpi <- read.delim("~/Documents/PortfolioProjects/donneesipc.txt")
+datacpi <- read.delim("~/Documents/PortfolioProjects/datacpi.txt")
 View(datacpi)
 
 
