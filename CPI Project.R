@@ -6,10 +6,10 @@ View(datacpi)
 # Let's create a time series for CPI and CPIX and plot both series on a graph.
 
 CPI <- ts(datacpi$CPI, start=c(2005, 1), end=c(2023, 7), frequency = 12)
-CPIXFE <- ts(datacpi$CPIXFE, start=c(2005, 1), end=c(2023, 7), frequency = 12)
+CPIX <- ts(datacpi$CPIX, start=c(2005, 1), end=c(2023, 7), frequency = 12)
 
-ts.plot(CPI, CPIXFE, main="CPI et CPIXFE", col=c("blue", "red"))
-legend("topleft", legend=c("CPI", "CPIXFE"), lty=1:1, col=c("blue", "red"), 
+ts.plot(CPI, CPIX, main="CPI et CPIX", col=c("blue", "red"))
+legend("topleft", legend=c("CPI", "CPIX"), lty=1:1, col=c("blue", "red"), 
        bty="n", x.intersp=0.5, y.intersp=0.5, xpd=TRUE)
 
 
